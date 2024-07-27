@@ -1,0 +1,56 @@
+/* 모든 페이지에서 공통으로 사용되는 디자인 */
+/* 모든 페이지에서 공통으로 사용할 폰트. IBM Plex, Ubuntu 등등 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* 기본적으로 모든 요소들에는 IBM 글꼴을 적용 */
+/* font-family: "Ubuntu", sans-serif; -> Ubuntu 폰트 사용 시 */
+/* font-family: "IBM Plex Sans KR", sans-serif;  -> IBM 폰트 사용 시*/
+
+*{
+    font-family: "IBM Plex Sans KR", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.err{
+    color: red;
+    font-weight: 800;
+}
+
+.success{
+    color: rgb(0, 255, 0);
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #888888;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.effect-button{
+    background-color: #e8e8e8;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 0 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.effect-button:hover{
+    box-shadow: 0 5px black;
+    transform: translateY(-2px);
+}
+
+.effect-button:active{
+    box-shadow: none;
+    transform: translateY(3px);
+}

@@ -1,0 +1,129 @@
+/* 회원가입페이지, 로그인페이지, 비밀번호찾기페이지, 아이디찾기페이지에서 공통으로 사용할 디자인 */
+
+.auth-background{
+    display: flex;
+    justify-content: center;
+    padding: 50px 30px 100px;
+
+    background-image: url(../assets/auth-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.auth-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    border: 4px solid black;
+    width: 500px;
+    padding: 20px 10px;
+
+    box-shadow: 15px 15px rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+}
+
+.auth-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 70px;
+}
+
+.page-title{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 5px;
+
+    position: relative;
+
+    border: 3px solid black;
+    padding: 25px 20px 10px;
+}
+
+.input-box input, .input-box select{
+    border: 3px solid black;
+    padding: 10px 5px;
+}
+
+.status-msg{
+    font-size: 13px;
+    padding-left: 10px;
+
+}
+
+/* .box-title{
+    position: absolute;
+    top: -20px;
+    left: 2px;
+    padding: 2px 5px;
+    border: 3px solid black;
+    background-color: #6CD5E9;
+} */
+
+.input-box label{
+    position: absolute;
+    top: -20px;
+    left: 2px;
+    padding: 2px 5px;
+    border: 3px solid black;
+    background-color: #6CD5E9;
+}
+
+.auth-container button {
+    border: 3px solid black;
+    background-color: #6CD5E9;
+    padding: 20px 0 20px;
+}
+
+.social-login{
+    padding: 20px 0;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.auth-container .kakao-btn{
+    color: #000000D9;
+    border: none;
+    background-color: #FEE500;
+    padding: 12px;
+}
+
+.auth-container .naver-btn{
+    border: none;
+    background-color: #03C75A;
+    padding: 12px;
+    color: white;
+}
+
+.auth-foot{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.auth-foot{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.vertical-line{
+    border-right: 1px solid silver;
+    height: 15px;
+}

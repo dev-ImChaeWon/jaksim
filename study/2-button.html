@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        
+        button{
+            background-color: rgb(204, 204, 204);
+            border: none;
+            transition: 0.3s;
+            border-radius: 15%;
+            padding: 50px 50px;
+
+            box-shadow: 0 5px;
+        }
+        
+        /* 가상클래스 hover : 마우스가 올라갔을 때 적용될 디자인 */
+        button:hover{
+            background-color: rgba(255, 0, 0, 0.066);
+            transform: translateY(-10px);
+            box-shadow: 0 10px;
+        }
+        
+        /* 가상클래스 active : 마우스로 클릭했을 때 적용될 디자인 */
+        button:active{
+            background-color: rgba(0, 255, 0, 0.476);
+            transform: translateY(2px);
+            box-shadow: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <button>LOGIN</button>
+</body>
+</html>

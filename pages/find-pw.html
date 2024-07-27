@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAKSIM-비밀번호 찾기</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <div class="auth-background">
+        <form class="auth-container">
+
+            <div class="auth-head">
+                <a href=""><img class="logo" src="../assets/logo_black.png" alt=""></a>
+                <p class="page-title">Find Password</p>
+            </div>
+
+            <div class="input-box">
+                <label for="email">이메일</label>
+                <input id="email" placeholder="email 입력" type="text">
+                <p class="status-msg err">email 형식에 맞지 않습니다.</p>
+            </div>
+
+            <div class="input-box">
+                <label for="nickname">닉네임</label>
+                <input id="nickname" placeholder="닉네임 입력" type="text">
+            </div>
+
+            <div class="input-box">
+                <label for="find-question">본인 확인 질문</label>
+                <select id="find-question">
+                    <option value="1">내가 태어난 곳은?</option>
+                    <option value="2">가장 좋아하는 사람은?</option>
+                    <option value="3">내가 다니던 초등학교는?</option>
+                </select>
+                <input id="find-answer" placeholder="응답 입력" type="text">
+            </div>
+
+            <div class="input-box">
+                <label for="password">새로 사용할 비밀번호</label>
+                <input id="password" placeholder="새 비밀번호 입력" type="password">
+                <p class="status-msg err">좀 길게쓰세요</p>
+                <input id="password-check" placeholder="비밀번호 확인" type="password">
+                <p class="status-msg err">일치하지 않습니다</p>
+            </div>
+
+            <button>비밀번호 변경!</button>
+
+            <div class="auth-foot">
+                <a href="../pages/sign-in.html">회원가입</a>
+                <div class="vertical-line"></div>
+                <a href="../pages/log-in.html">로그인</a>
+                <div class="vertical-line"></div>
+                <a href="./find-id.html">ID 찾기</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

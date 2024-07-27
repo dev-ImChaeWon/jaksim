@@ -1,0 +1,105 @@
+/* index.html에서 사용하는 css */
+/* 핸드폰 기준 디자인 */
+
+/* header 디자인 */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.main-logo{
+    width: 150px;
+}
+
+/* search banner 디자인 */
+.banner{
+    /* background-color: #6cd5e9; */
+    background-image: linear-gradient(to bottom, white, #6cd5e9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-img{
+    width: 50%;
+    min-width: 300px;
+    max-width: 580px;
+    /* box-shadow: 0 0 15px; */
+    filter: drop-shadow(0 0 15px);
+    animation-name: fly;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+@keyframes fly {
+    0%{
+        transform: scale(1) translateX(-3%) translateY(-3%);
+    }
+    100%{
+        transform: scale(1.005) translateX(0%) translateY(0%);
+    }
+}
+
+@keyframes circus{
+
+}
+
+.category-container{
+    transform: skewY(-5deg);
+    position: absolute;
+}
+
+.category-container label{
+    background-color: black;
+    box-shadow: 5px 5px #6cd5e9;
+    color: white;
+    cursor: pointer;
+    padding: 2px 6px;
+    transition: 0.3s;
+    font-weight: 900;
+    top: 10px;
+}
+
+.category-container label:hover, .category-container input:checked + label{
+    background-color: #6cd5e9;
+    color: black;
+    box-shadow: 0 0 15px;
+}
+
+.category-container input{
+    display: none;
+}
+
+.search-bar {
+    color: white;
+    background-color: black;
+    padding: 15px 20px 10px;
+    font-size: 25px;
+    box-shadow: 0 0 15px black;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    transform: skewY(-5deg);
+    position: relative;
+}
+
+/* 태블릿 기준 디자인 */
+@media screen and (min-width:600px) {
+
+}
+
+/* 웹 기준 디자인 */
+@media screen and (min-width:1024px) {
+    header{
+        padding: 5px 100px;
+    }
+}
