@@ -12,6 +12,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 30;
 }
 
 .main-logo{
@@ -25,6 +26,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .banner-img{
@@ -56,6 +59,8 @@ header{
 .category-container{
     transform: skewY(-5deg);
     position: absolute;
+    bottom: 50%;
+    z-index: 20;
 }
 
 .category-container label{
@@ -89,7 +94,14 @@ header{
     outline: none;
     font-weight: bold;
     transform: skewY(-5deg);
-    position: relative;
+    position: absolute;
+    bottom: 35%;
+    z-index: 10;
+}
+
+.category+search{
+    position: absolute;
+    bottom: 30%;
 }
 
 /* 태블릿 기준 디자인 */
