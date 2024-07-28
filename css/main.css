@@ -43,6 +43,118 @@ header{
     animation-direction: alternate;
 }
 
+main{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination{
+    margin: 0 auto;
+}
+
+.active{
+    background-color: #6cd5e9;
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+/* card 디자인 시작 */
+.meeting-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card{
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.card-title{
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.card-cover{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.meeting-leader-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-body{
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.weekday, .mission{
+    background-color: #2d2d2d;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.mon{color: #dcecaa;}
+.tue{color: #3bff8d;}
+.wed{color: #ffa845;}
+.thu{color: #ff6b6b;}
+.fri{color: #93a6ff;}
+.sat{color: #aafff1;}
+.sun{color: #cfb5ff;}
+
+.mission{
+    color: #ff26db;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category{
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #6cd5e9;
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid silver;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.participants{
+    display: flex;
+}
+/* card 디자인 끝 */
+
 /* footer 디자인 시작 */
 footer{
     background-color: #333333;
@@ -131,7 +243,15 @@ footer{
 
 /* 태블릿 기준 디자인 */
 @media screen and (min-width:600px) {
+    .meeting-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+@media screen and (min-width:900px) {
+    .meeting-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* 웹 기준 디자인 */
@@ -142,5 +262,9 @@ footer{
 
     footer{
         padding: 0 100px;
+    }
+
+    .meeting-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
