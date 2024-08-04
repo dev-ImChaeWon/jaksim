@@ -6,6 +6,7 @@
     <title>JAKSIM-회원가입</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/modal.css">
 </head>
 <body>
     <div class="auth-background">
@@ -20,21 +21,21 @@
                 <!-- <span class="box-title">이메일</span> -->
                 <label for="email">이메일</label>
                 <input id="email" placeholder="email 입력" type="text">
-                <p class="status-msg err">email 형식에 맞지 않습니다.</p>
+                <p id="email-msg" class="status-msg err">email 형식에 맞지 않습니다</p>
             </div>
             <div class="input-box">
                 <!-- <span class="box-title">닉네임</span> -->
                 <label for="nickname">닉네임</label>
                 <input id="nickname" placeholder="닉네임 입력" type="text">
-                <p class="status-msg err">사용할 수 없는 닉네임입니다.</p>
+                <p id="nickname-msg" class="status-msg err">사용할 수 없는 닉네임입니다.</p>
             </div>
             <div class="input-box">
                 <!-- <span class="box-title">비밀번호</span> -->
                 <label for="password">비밀번호</label>
                 <input id="password" placeholder="비밀번호 입력" type="password">
-                <p class="status-msg err">좀 길게쓰세요</p>
+                <p id="pw-msg" class="status-msg err">8글자 이상 입력하세요</p>
                 <input id="password-check" placeholder="비밀번호 확인" type="password">
-                <p class="status-msg err">확인 제대로하세요</p>
+                <p id="pw-check-msg" class="status-msg err">비밀번호가 일치하지 않습니다</p>
             </div>
             <div class="input-box">
                 <span class="box-title">본인 확인 질문</span>
@@ -44,6 +45,7 @@
                     <option value="3">내가 다니던 초등학교는?</option>
                 </select>
                 <input id="find-answer" placeholder="응답 입력" type="text">
+                <p id="find-answer-msg" class="status-msg err">필수입력란입니다</p>
             </div>
             <button>회원 가입!</button>
             <div class="social-login">
@@ -59,5 +61,15 @@
             </div>
         </form>
     </div>
+    <div class="modal-wrapper">
+        <div class="modal">
+            <img src="../assets/logo_black.png" alt="">
+            <h2>회원가입 성공!</h2>
+            <a href="./log-in.html">
+                <p>로그인</p>
+            </a>
+        </div>
+    </div>
+    <script src="../js/sign-in.js"></script>
 </body>
 </html>

@@ -60,7 +60,11 @@
 .status-msg{
     font-size: 13px;
     padding-left: 10px;
+    display: none;
+}
 
+.active{
+    display: block;
 }
 
 /* .box-title{
