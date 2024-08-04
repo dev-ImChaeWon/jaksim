@@ -170,9 +170,9 @@ authForm.onsubmit = (e) => {
     {
         // alert('썽공');
         // 사용자가 입력한 값을 서버로 전달 -> 서버에서는 그 값을 db에 저장
-        let modalWrapper = document.querySelector('#modal-wrapper');
+        let modalWrapper = document.querySelector('.modal-wrapper');
         modalWrapper.classList.add('active');
-        // document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
     }
     
 }
